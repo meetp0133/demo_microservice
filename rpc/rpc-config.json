@@ -1,0 +1,12 @@
+{
+  "rpc": {
+    "server": {
+      "core": "0.0.0.0:5000",
+      "customer": "0.0.0.0:1002"
+    },
+    "client": {
+      "core": "localhost:5000",
+      "customer": "localhost:1002"
+    }
+  }
+}

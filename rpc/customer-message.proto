@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+
+
+service Customer {
+    rpc CustomerAddLogEntry(AddLogEntry) returns (RpcResult) { }
+}
+
+
+message AddLogEntry {
+        string customerName = 2;
+    string productName = 3;
+    string status = 4;
+    string customerType = 5;
+}
+
+
+message RpcResult {
+    bool result = 1;
+    string jsonData = 2;
+} 
+
+ 

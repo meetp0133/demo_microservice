@@ -1,0 +1,24 @@
+{
+  "mongo": {
+    "host": "localhost",
+    "port": "27017",
+    "db": "vendors"
+  },
+  "system": {
+    "api_port": 5000
+  },
+  "api_gateway": {
+    "routes": [
+      {
+        "url": "/product",
+        "host": "http://localhost:5001",
+        "wrap_http_errors": true
+      },
+      {
+        "url": "/order",
+        "host": "http://localhost:5002",
+        "wrap_http_errors": true
+      }
+    ]
+  }
+}
