@@ -10,7 +10,7 @@ module.exports.mongoDBConnection = async (mongoose, mongo) => {
 
     let connection = () => mongoose.connect(connectionStr, options);
     let successful = () => {
-        console.log("Mongo DB connection succesfully started on : " + mongo.db);
+        console.log("Mongo DB connection successfully started on : " + mongo.db);
     };
 
     let error = async (msg, attempt) => {
